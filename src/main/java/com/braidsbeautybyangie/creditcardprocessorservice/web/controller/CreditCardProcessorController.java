@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/v1/payment-service/ccp")
+@RequestMapping("/v1/credit-card/ccp")
 public class CreditCardProcessorController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CreditCardProcessorController.class);
@@ -15,6 +15,6 @@ public class CreditCardProcessorController {
     @PostMapping("/process")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void processCreditCard(@RequestBody CreditCardProcessRequest request) {
-        LOGGER.info("Processing request: {}", request);
+        LOGGER.info("Processing request payment: {}", request);
     }
 }
