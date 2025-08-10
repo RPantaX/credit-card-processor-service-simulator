@@ -10,4 +10,4 @@ COPY target/credit-card-processor-service-0.0.1-SNAPSHOT.jar credit-card-process
 
 EXPOSE 8085
 
-ENTRYPOINT ["java", "-jar", "config-service.jar"]
+ENTRYPOINT ["java", "-jar", "credit-card-processor-service.jar"]
